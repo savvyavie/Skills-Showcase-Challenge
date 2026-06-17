@@ -1,0 +1,303 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lance Xavier Castro — Personal Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;500;600;700&family=Share+Tech+Mono&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+        <header class="nav-wrapper">
+            <nav class="nav container">
+                <a href="#home" class="nav-logo">
+                    <img
+                        src="assets/profile_picture.jpg"
+                        alt="It's me!"
+                        class="nav-photo"
+                    />
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button
+                        class="theme-toggle"
+                        id="themeToggle"
+                        aria-label="Toggle dark mode"
+                    >
+                        <span class="theme-icon" id="themeIcon">☀️</span>
+                    </button>
+                    <button
+                        class="nav-hamburger"
+                        id="hamburger"
+                        aria-label="Open menu"
+                    >
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="#home" class="mobile-link">Home</a></li>
+                <li><a href="#projects" class="mobile-link">Projects</a></li>
+                <li><a href="#contact" class="mobile-link">Contact</a></li>
+            </ul>
+        </div>
+
+        <main>
+            <section id="home" class="section info-section">
+                <div class="container info-content">
+                    <div class="info-text fade-in">
+                        <p class="info-eyebrow">Lance Xavier Castro</p>
+                        <h1 class="info-name">
+                            My Portfolio<span class="blink-cursor">_ </span>
+                        </h1>
+                        <p class="info-tagline">
+                            BS Computer Science Student<br />University of the
+                            Philippines - Cebu
+                        </p>
+                        <p class="info-bio">
+                            Hello! I'm Lance Xavier, but you can call me Avie!
+                            I'm a 3rd Year Computer Science student a the
+                            university of the Philippines Cebu. Here's some
+                            stuff I've dabbled in lately, along with some
+                            projects that I've worked on further down the page!
+                        </p>
+                        <div class="info-skills">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">HTML / CSS</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Visual Basic .NET</span>
+                            <span class="skill-tag">Godot 4</span>
+                            <span class="skill-tag">Linux</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Networking</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Figma</span>
+                        </div>
+                        <div class="info-cta">
+                            <a href="#projects" class="btn btn-primary"
+                                >View My Work</a
+                            >
+                            <a href="#contact" class="btn btn-ghost"
+                                >Get In Touch</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <a
+                    href="#projects"
+                    class="scroll-hint"
+                    aria-label="Scroll down"
+                >
+                    <span class="scroll-arrow">↓</span>
+                </a>
+            </section>
+
+            <section id="projects" class="section projects-section">
+                <div class="container">
+                    <div class="section-header fade-in">
+                        <p class="section-eyebrow">
+                            Just Some Stuff I Worked On
+                        </p>
+                        <h2 class="section-title">Projects</h2>
+                        <p class="section-sub">
+                            Here are some projects (both solo and group) that
+                            I'm proud of.
+                        </p>
+                    </div>
+
+                    <div class="projects-grid">
+                        <article class="project-card fade-in delay-1">
+                            <div class="project-img"></div>
+                            <div class="project-body">
+                                <div class="project-meta">
+                                    <span class="project-num">01 - Solo</span>
+                                </div>
+                                <h3 class="project-title">
+                                    Simple Library Management System
+                                </h3>
+                                <p class="project-desc">
+                                    A library tool for tracking books, users,
+                                    and borrowing/ returning transactions. Built
+                                    as a proof of concept.
+                                </p>
+                                <div class="project-tech">
+                                    <span>Visual Basic</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card fade-in delay-2">
+                            <div class="project-img"></div>
+                            <div class="project-body">
+                                <div class="project-meta">
+                                    <span class="project-num">02 - Group</span>
+                                </div>
+                                <h3 class="project-title">TyperJaws</h3>
+                                <p class="project-desc">
+                                    A Typer Shark-inspired game where players
+                                    type words to eliminate enemies, built with
+                                    the Godot 4 engine.
+                                </p>
+                                <div class="project-tech">
+                                    <span>Godot 4</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card fade-in delay-3">
+                            <div class="project-img"></div>
+                            <div class="project-body">
+                                <div class="project-meta">
+                                    <span class="project-num">03 - Group</span>
+                                </div>
+                                <h3 class="project-title">
+                                    CrowdLens - Frontend
+                                </h3>
+                                <p class="project-desc">
+                                    A crowdsourcing web app that predicts crowd
+                                    density, service speed, and real-time
+                                    conditions for establishments using LSTM and
+                                    weighted-temporal forecasting.
+                                </p>
+                                <div class="project-tech">
+                                    <span>React</span>
+                                    <span>TypeScript</span>
+                                    <span>CSS</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section contact-section">
+                <div class="container">
+                    <div class="section-header fade-in">
+                        <p class="section-eyebrow">Hi I Need More Friends</p>
+                        <h2 class="section-title">Contact</h2>
+                        <p class="section-sub">Feel free to contact me!</p>
+                    </div>
+                    <div class="contact-layout">
+                        <div class="contact-info fade-in delay-1">
+                            <div class="contact-card">
+                                <div>
+                                    <p class="cc-label">Location</p>
+                                    <p class="cc-value">
+                                        Cebu City, Cebu, Philippines
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="contact-card">
+                                <div>
+                                    <p class="cc-label">Email</p>
+                                    <p class="cc-value">
+                                        lancecastro129@gmail.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form
+                            class="contact-form fade-in delay-2"
+                            id="contactForm"
+                            novalidate
+                        >
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name" class="form-label"
+                                        >Name</label
+                                    >
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        class="form-input"
+                                        placeholder="Name"
+                                        required
+                                    />
+                                    <span
+                                        class="form-error"
+                                        id="nameError"
+                                    ></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label"
+                                        >Email</label
+                                    >
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        class="form-input"
+                                        placeholder="example@example.com"
+                                        required
+                                    />
+                                    <span
+                                        class="form-error"
+                                        id="emailError"
+                                    ></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label"
+                                    >Message</label
+                                >
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    class="form-input form-textarea"
+                                    placeholder="Message"
+                                    required
+                                    rows="5"
+                                ></textarea>
+                                <span
+                                    class="form-error"
+                                    id="messageError"
+                                ></span>
+                            </div>
+                            <button
+                                type="submit"
+                                class="btn btn-primary btn-full"
+                                id="submitBtn"
+                            >
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loading hidden">Sending…</span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="toast" id="successToast">
+                        <span class="toast-icon">✅</span>
+                        <span>Message sent! I'll get back to you soon.</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <hr />
+
+        <footer class="footer">
+            <div class="container footer-inner">
+                <a href="#home" class="back-top" aria-label="Back to top"
+                    >↑ Top</a
+                >
+            </div>
+        </footer>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

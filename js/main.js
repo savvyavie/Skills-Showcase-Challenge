@@ -4,14 +4,14 @@ const themeIcon = document.getElementById("themeIcon");
 
 const savedTheme = localStorage.getItem("portfolio-theme") || "dark";
 html.setAttribute("data-theme", savedTheme);
-themeIcon.textContent = savedTheme === "dark" ? "✦" : "◗";
+themeIcon.textContent = savedTheme === "dark" ? "◗" : "✦";
 
 themeToggle.addEventListener("click", () => {
   const current = html.getAttribute("data-theme");
   const next = current === "dark" ? "light" : "dark";
   html.setAttribute("data-theme", next);
   localStorage.setItem("portfolio-theme", next);
-  themeIcon.textContent = next === "dark" ? "✦" : "◗";
+  themeIcon.textContent = next === "dark" ? "◗" : "✦";
 });
 
 const observer = new IntersectionObserver(

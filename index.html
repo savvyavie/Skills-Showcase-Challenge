@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;500;600;700&family=Share+Tech+Mono&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
             rel="stylesheet"
         />
         <link rel="stylesheet" href="css/style.css" />
@@ -16,7 +16,7 @@
     <body>
         <header class="nav-wrapper">
             <nav class="nav container">
-                <a href="#home" class="nav-logo">
+                <a href="#home">
                     <img
                         src="assets/profile_picture.jpg"
                         alt="It's me!"
@@ -121,7 +121,6 @@
 
                     <div class="projects-grid">
                         <article class="project-card fade-in delay-1">
-                            <div class="project-img"></div>
                             <div class="project-body">
                                 <div class="project-meta">
                                     <span class="project-num">01 - Solo</span>
@@ -141,7 +140,14 @@
                         </article>
 
                         <article class="project-card fade-in delay-2">
-                            <div class="project-img"></div>
+                            <div
+                                class="project-img"
+                                id="img-02"
+                                style="
+                                    background-size: cover;
+                                    background-image: url(&quot;assets/typerjaws.png&quot;);
+                                "
+                            ></div>
                             <div class="project-body">
                                 <div class="project-meta">
                                     <span class="project-num">02 - Group</span>
@@ -159,7 +165,13 @@
                         </article>
 
                         <article class="project-card fade-in delay-3">
-                            <div class="project-img"></div>
+                            <div
+                                class="project-img"
+                                style="
+                                    background-image: url(&quot;assets/Crowdlens.png&quot;);
+                                "
+                                id="img-03"
+                            ></div>
                             <div class="project-body">
                                 <div class="project-meta">
                                     <span class="project-num">03 - Group</span>
@@ -287,8 +299,6 @@
                 </div>
             </section>
         </main>
-
-        <hr />
 
         <footer class="footer">
             <div class="container footer-inner">

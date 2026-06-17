@@ -157,6 +157,9 @@ img {
 }
 
 .theme-toggle {
+    color: var(--accent);
+    font-size: 1.1rem;
+    line-height: 1;
     background: var(--accent-dim);
     border: 1px solid var(--border);
     border-radius: 50%;
@@ -173,8 +176,14 @@ img {
 }
 
 .theme-toggle:hover {
-    transform: rotate(20deg);
     background: var(--accent-glow);
+}
+
+#themeIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
 }
 
 .nav-hamburger {
